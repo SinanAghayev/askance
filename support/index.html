@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Askance — Support</title>
+<meta name="description" content="Help and contact for Askance, a chess escape puzzle for iOS and Android.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#120d09; --card:#1d1510; --card2:#241a13; --ink:#f4e8cf; --muted:#bfae8f;
+    --line:#3a2b1e; --gold:#e3b565; --gold-deep:#c9964a;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:
+      radial-gradient(1200px 600px at 50% -200px, rgba(170,105,40,.35), transparent 70%),
+      var(--bg);
+    color:var(--ink);font:17px/1.65 Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    padding:48px 16px 72px;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:720px;margin:0 auto}
+  header{text-align:center;margin-bottom:36px}
+  .crest{width:84px;height:84px;margin:0 auto 18px;border-radius:50%;
+    background:radial-gradient(circle at 50% 40%,#4a3526,#2a1d14);
+    border:4px solid var(--gold-deep);box-shadow:0 0 0 2px rgba(227,181,101,.25),0 10px 40px rgba(0,0,0,.5);
+    display:grid;place-items:center}
+  .crest svg{width:46px;height:46px}
+  .eyebrow{font-weight:700;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  h1{font-family:Bitter,Georgia,serif;font-weight:700;font-size:44px;line-height:1.1;margin:6px 0 10px}
+  .lede{color:var(--muted);margin:0 auto;max-width:520px}
+  .contact{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);
+    border-radius:18px;padding:26px 26px 24px;text-align:center;margin-bottom:28px}
+  .contact h2{margin:0 0 6px}
+  .btn{display:inline-block;margin-top:12px;padding:13px 26px;border-radius:12px;
+    background:linear-gradient(180deg,#f5c877,#e0a54b);color:#2b1a0b;font-weight:700;text-decoration:none;
+    box-shadow:0 4px 0 #a8732c}
+  .btn:active{transform:translateY(2px);box-shadow:0 2px 0 #a8732c}
+  .hint{font-size:14px;color:var(--muted);margin-top:14px}
+  h2{font-family:Bitter,Georgia,serif;font-size:24px;margin:36px 0 12px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:10px 0;padding:0 20px}
+  summary{cursor:pointer;list-style:none;padding:16px 28px 16px 0;font-weight:700;position:relative}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";position:absolute;right:0;top:12px;font-size:22px;color:var(--gold)}
+  details[open] summary::after{content:"–"}
+  details p{margin:0 0 16px;color:var(--muted)}
+  a{color:var(--gold)}
+  footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);text-align:center;
+    font-size:14px;color:var(--muted)}
+  footer a{margin:0 10px}
+  @media (max-width:480px){h1{font-size:36px}.contact{padding:22px 18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="crest" aria-hidden="true">
+      <svg viewBox="0 0 64 64"><path fill="#e3b565" d="M22 56h26c1-9-1-19-6-27-2-4-3-8-2-12-4 1-7 4-8 7l-6 2c-3 1-5 4-5 7 0 2 2 3 4 3l6-2c1 2 0 5-3 8-4 5-6 9-6 14z"/><path fill="#8a5a22" d="M41 22c3 7 5 16 4 30h-3c1-12-1-21-4-28z" opacity=".55"/></svg>
+    </div>
+    <div class="eyebrow">Askance</div>
+    <h1>Support</h1>
+    <p class="lede">Need help with the game, a purchase, or found a bug? The answers to common questions are below, or you can write to me directly.</p>
+  </header>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p style="margin:0;color:var(--muted)">Askance is made by one developer. I read every message and usually reply within 2–3 days.</p>
+    <a class="btn" href="mailto:aghayevsinan@gmail.com?subject=Askance%20support">aghayevsinan@gmail.com</a>
+    <p class="hint">Please include your device model, iOS or Android version, and the level number if it's about a specific puzzle.</p>
+  </section>
+
+  <h2>Frequently asked questions</h2>
+
+  <details>
+    <summary>How do I play?</summary>
+    <p>Tap the knight to see where it can move, then tap a highlighted square. Your knight moves only in the L-shape of a chess knight. Reach the exit square without stepping onto a square an enemy piece can capture.</p>
+  </details>
+  <details>
+    <summary>What are the red squares?</summary>
+    <p>Red squares are threatened by an enemy piece, so moving there means capture. Using a hint reveals them for the current level. With Unlimited Hints, you can also have them shown automatically on every level (Settings → Show danger squares).</p>
+  </details>
+  <details>
+    <summary>I'm stuck on a level. What can I do?</summary>
+    <p>Use Undo as many times as you like, or Restart the level. A hint reveals every threatened square on the board and stays on until you clear that level. You earn a new hint every few levels, or you can unlock unlimited hints with a one-time purchase.</p>
+  </details>
+  <details>
+    <summary>Why can't I capture pieces on some levels?</summary>
+    <p>Boss levels (every 20th level) don't allow captures. The only way to win is to find the exit.</p>
+  </details>
+  <details>
+    <summary>What is Shrouded mode?</summary>
+    <p>In Shrouded mode the enemies are hidden. The census at the top tells you how many of each piece are on the board, but not where they are. Work out which squares are safe before you move. You have three lives for the whole run, so see how many boards you can clear.</p>
+  </details>
+  <details>
+    <summary>I bought something but it isn't showing. How do I restore it?</summary>
+    <p>Open Settings and tap “Restore purchases”. Make sure you're signed in with the same Apple ID or Google account you used to buy. If it still doesn't appear, email me with the date of purchase.</p>
+  </details>
+  <details>
+    <summary>How do I get a refund?</summary>
+    <p>Purchases are handled by the App Store or Google Play, so refunds must be requested from them. On iPhone, go to reportaproblem.apple.com. On Android, open your order history in Google Play.</p>
+  </details>
+  <details>
+    <summary>Will I lose my progress if I delete the app?</summary>
+    <p>Your progress is saved on your device. Deleting the app removes it, but purchases can always be restored from Settings.</p>
+  </details>
+  <details>
+    <summary>How do I change the language?</summary>
+    <p>Open Settings and choose the language. Askance is available in English and Turkish.</p>
+  </details>
+
+  <footer>
+    <a href="../privacy/">Privacy Policy</a>
+    <a href="mailto:aghayevsinan@gmail.com">Contact</a>
+    <div style="margin-top:10px">© 2026 Sinan Aghayev</div>
+  </footer>
+</div>
+</body>
+</html>
